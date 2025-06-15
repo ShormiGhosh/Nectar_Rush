@@ -5,6 +5,7 @@ import 'package:flame/components.dart';
 import 'package:flame/events.dart';
 import 'package:flame/game.dart';
 import 'package:flame/input.dart';
+import 'package:flame_audio/flame_audio.dart';
 import 'package:flutter/material.dart'; // Import for Colors
 import 'package:nectar__rush/background.dart';
 import 'package:nectar__rush/configuration.dart';
@@ -12,6 +13,7 @@ import 'package:nectar__rush/ground.dart';
 import 'package:nectar__rush/webGroup.dart';
 
 import 'bee.dart';
+import 'game_pause_screen.dart';
 import 'hive_spawner.dart';
 
 class NectarRushGame extends FlameGame with TapDetector, HasCollisionDetection {
@@ -46,14 +48,13 @@ class NectarRushGame extends FlameGame with TapDetector, HasCollisionDetection {
         size: Vector2(30, 30),
       ),
       onPressed: () {
-        if(isPause) {
-          resumeEngine();
-        }
-        else {
-          pauseEngine();
-        }
+         if(isPause){
+           resumeEngine();
+         }
+         else{
+           pauseEngine();
+         }
         isPause = !isPause;
-        //overlays.add('main_menu'); //
       },
     );
   }

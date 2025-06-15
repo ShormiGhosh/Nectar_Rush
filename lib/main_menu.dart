@@ -31,8 +31,9 @@ class _MainMenuState extends State<MainMenu> {
     return Scaffold(
       body: GestureDetector(
         onTap: () {
+          FlameAudio.play('RestartAndStart.wav', volume: 0.5);
           widget.game.overlays.remove(MainMenu.id);
-          FlameAudio.bgm.stop(); // Resume background music when the game starts
+          FlameAudio.bgm.stop();
           widget.game.resumeEngine();
         },
         child: Stack(

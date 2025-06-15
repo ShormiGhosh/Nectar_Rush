@@ -74,6 +74,7 @@ class GameOver extends StatelessWidget {
 
                 ElevatedButton(
                   onPressed: () {
+                    FlameAudio.play('RestartAndStart.wav', volume: 0.5);
                     game.bee.reset();
                     game.overlays.remove(GameOver.id);
                     game.resumeEngine();
@@ -96,6 +97,7 @@ class GameOver extends StatelessWidget {
 
                 ElevatedButton(
                   onPressed: () {
+                    FlameAudio.play('RestartAndStart.wav', volume: 0.5);
                     game.bee.reset();
                     game.overlays.remove(GameOver.id);
                     game.overlays.add(MainMenu.id);

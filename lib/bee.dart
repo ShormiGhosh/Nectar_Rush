@@ -46,7 +46,7 @@ int score = 0;
     }
   }
   void fly(){
-    add(MoveByEffect(Vector2(0.0   ,Config.gravity), EffectController
+    add(MoveByEffect(Vector2(0.0 ,Config.gravity), EffectController
       (duration: 0.2,curve: Curves.decelerate),onComplete: ()=>current=BeeMovement.down),);
     current=BeeMovement.up;
   }
