@@ -1,0 +1,1 @@
+enum WebPos{top,bottom}

@@ -1,0 +1,1 @@
+enum BeeMovement{middle,up,down}
