@@ -1,16 +1,27 @@
-# nectar__rush
+# Nectar Rush
 
-A new Flutter project.
+**Nectar Rush** is a Flutter-based mobile game where a bee flies to collect nectar while avoiding obstacles like spider webs. It’s designed as a fun and engaging endless runner game with a custom theme.
 
-## Getting Started
+## 🚀 Features
 
-This project is a starting point for a Flutter application.
+- Endless flying bee animation
+- Tap-to-fly gameplay 
+- Score tracking
+- Spider web obstacles
+- Custom components, background, and sounds
 
-A few resources to get you started if this is your first Flutter project:
+## 📱 Screenshots 
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 🎯 Tech Stack
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **Flutter**
+- **Dart**
+- **shared_preferences**
+
+## 🔧 Getting Started
+
+```bash
+git clone https://github.com/your_username/nectar_rush.git
+cd nectar_rush
+flutter pub get
+flutter run
