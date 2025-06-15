@@ -10,7 +10,7 @@
 - Spider web obstacles
 - Custom components, background, and sounds
 
-## Install the .apk from release section to play this game!!
+## Install the .apk from releases section to play this game!!
 
 ## 📱 Screenshots 
 
